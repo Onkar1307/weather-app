@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+h1{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+  color: #000000;
+}
+
+  .card {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.407), rgba(32, 96, 96, 0.862)); /* Aquamarine gradient */
+  border: 1px solid rgba(255, 255, 255, 0.218);
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 500px;
+  margin: auto;
+  margin-top: 80px;
+  height: auto;
+  margin-bottom: 50px;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  
+}
+.card input{
+  margin-top: 40px;
+  height: 40px;
+  width: 250px;
+  border-radius: 45px;
+  margin: 20px;
+  border: 1px solid #000000;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card button{
+  background: linear-gradient(90deg, #00f5d4, #00bbf9, #9b5de5);
+  background-size: 300% 300%; /* for animation */
+  color: white;
+  font-size: 15px;
+  padding: 12px 24px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  /* Glow */
+  box-shadow: 0 0 15px rgba(0, 245, 212, 0.7), 
+              0 0 25px rgba(68, 0, 152, 0.6);
+
+  /* Animation */
+  animation: gradientMove 4s ease infinite, glowPulse 2s ease-in-out infinite;
+  transition: transform 0.2s ease;       
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+.weather h1{
+  margin-top: 0px;
+  font-size: 180px;
+}
+.card h2{
+  margin-top: -30px;
+  font-size: 80px;
+  font-weight: 700;
+}
+.card h3{
+  margin-top: -20 px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.description{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 30px;
+
+ 
+  flex-direction: column;
+
+}
+.col img{
+  height: 70px;
+  width: 70px;
+  
+}
